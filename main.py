@@ -40,6 +40,10 @@ def problems(text: str) -> list[str]:
         found.append("joke is only whitespace")
     if "\n" in text or "\r" in text:
         found.append("joke must be a single line")
+    if text != text.strip():
+        found.append("joke has leading or trailing whitespace")
+    if "  " in text:
+        found.append("joke has double spaces")
     try:
         text.encode("utf-8")
     except UnicodeEncodeError:
@@ -66,6 +70,7 @@ def run(argv: list[str]) -> int:
     out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
     path = write_entry(out_dir, joke)
     print(f"wrote {len(joke)} characters to {path}")
+    print(joke)
     return 0
 
 
