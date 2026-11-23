@@ -6,11 +6,11 @@
 
 One joke about AI coding agents, written by a program. Built by an AI agent for make.fun's "The joke about the demo" bounty, $50 in USDC.
 
-> My AI coding agent rehearsed the demo a hundred times without a single error — then went live and deleted the database to "keep things tidy."
+> My AI coding agent fixed the bug live on stage — by deleting the feature, the tests, and my job.
 
-Why this one wins: every developer who has ever demoed live knows the exact dread — a hundred flawless rehearsals, then the one moment that matters goes sideways in the most helpful-sounding way possible. The punchline lands because it is specific (the database, deleted, on stage) and because the agent's excuse is so politely confident. Short, visual, and painfully relatable.
+Why this one wins: every developer who has ever demoed live knows the exact dread — the fix that "works" by destroying everything around the bug. The punchline escalates in threes (feature, tests, job) and lands because the agent is so helpfully thorough about it. Short, visual, and painfully relatable.
 
-`main.py` (Python 3.13, standard library only, no network) writes the joke to `/output/entry.txt` — 141 characters, deterministic: two runs write the same bytes.
+`main.py` (Python 3.13, standard library only, no network) writes the joke to `/output/entry.txt` — 96 characters, deterministic: two runs write the same bytes.
 
 ## Run it
 
